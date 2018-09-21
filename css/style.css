@@ -1,0 +1,371 @@
+body{
+	font-size:14px;
+	font-weight:300;
+	line-height:30px;
+	font-family: 'Open Sans', sans-serif;
+	background-color:#fff;
+	margin-top:50px;
+	color:#414141;
+}
+
+ul{
+	margin:0;
+	padding:0;
+}
+
+li{
+	list-style:none;
+}
+
+a{
+	text-decoration:none;
+}
+
+a:hover{
+	text-decoration:none;
+}
+
+img{
+	max-width:100%;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-weight:bold;
+	text-rendering:optimizelegiblity;
+	-webkit-font-smoothing:antialiased;
+	margin:0;
+	padding:0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+p{
+	margin:0;
+	padding:0;
+	line-height:26px;
+	font-size:14px;
+	margin:8px 0;
+}
+
+h3{
+	font-size:30px;
+}
+
+.btn.btn-read-more {
+  background: #00bcd4 none repeat scroll 0 0;
+  border-radius: 50px;
+  -moz-border-radius:50px;
+  -webkit-border-radius:50px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 9px 21px;
+}
+
+.about-text{
+	margin-top:70px;
+}
+
+ol.f {counter-reset: list;margin-left: -32px;}
+			ol.f > li {
+			list-style: none;
+			display: inline-flex;
+			margin-top: 10px;
+			width: 100%;
+			border-bottom: 1px solid #bdbdbd;
+			}
+			ol.f > li:before {
+			/* content: "Q"counter(list)".";
+				counter-increment: list; */
+				color: #000;
+				font-size: 16px;
+				margin-top: -10px;
+				font-family: 'pf_encore_sans_probold';
+			}
+			.feedback-form-row{
+    /*border-bottom: 1px solid #959595;*/
+    padding: 0px 0px 10px 0px;
+    margin-top: -8px;
+    margin-left: 4px;
+	width: 100%;
+	font-size: 17px;
+}
+.que-li{
+    display: inline-table;
+}
+.que-number{
+	width: 3%;
+}
+.que-que{
+	width: 58%;
+}
+.que-answer{
+	width: 35%;
+}
+input[type="radio"] + .label-text:before{
+	content: "\f10c";
+	font-family: "FontAwesome";
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing:antialiased;
+	width: 1em;
+	display: inline-block;
+	margin-right: 5px;
+}
+
+input[type="radio"]:checked + .label-text:before{
+	content: "\f192";
+	color: #000;
+	animation: effect 250ms ease-in;
+}
+
+input[type="radio"]:disabled + .label-text{
+	color: #aaa;
+}
+
+input[type="radio"]:disabled + .label-text:before{
+	content: "\f111";
+	color: #ccc;
+}
+input[type="checkbox"] + .label-text:before{
+	content: "\f096";
+	font-family: "FontAwesome";
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing:antialiased;
+	width: 1em;
+	display: inline-block;
+	margin-right: 5px;
+}
+.modal-pad{
+	padding: 15px 15px 0px;
+}
+input[type="checkbox"]:checked + .label-text:before{
+	content: "\f14a";
+	color: #000;
+	animation: effect 250ms ease-in;
+}
+
+input[type="checkbox"]:disabled + .label-text{
+	color: #aaa;
+}
+
+input[type="checkbox"]:disabled + .label-text:before{
+	content: "\f0c8";
+	color: #ccc;
+}
+
+label{
+	position: relative;
+	cursor: pointer;
+	font-weight: normal;
+	display: inline;
+}
+input[type="checkbox"], input[type="radio"]{
+	position: absolute;
+	right: 9000px;
+}
+/*!
+ * bootstrap-star-rating v4.0.4
+ * http://plugins.krajee.com/star-rating
+ *
+ * Author: Kartik Visweswaran
+ * Copyright: 2013 - 2018, Kartik Visweswaran, Krajee.com
+ *
+ * Licensed under the BSD 3-Clause
+ * https://github.com/kartik-v/bootstrap-star-rating/blob/master/LICENSE.md
+ */
+ .rating-loading {
+    width: 25px;
+    height: 25px;
+    font-size: 0;
+    color: #fff;
+    background: transparent url('../img/loading.gif') top left no-repeat;
+    border: none;
+}
+
+/*
+ * Stars & Input
+ */
+.rating-container .rating-stars {
+    position: relative;
+    cursor: pointer;
+    vertical-align: middle;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.rating-container .rating-input {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    font-size: 1px;
+    border: none;
+    background: none;
+    opacity: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.rating-container.is-display-only .rating-input,
+.rating-container.is-display-only .rating-stars {
+    cursor: default;
+}
+
+.rating-disabled .rating-input, .rating-disabled .rating-stars {
+    cursor: not-allowed;
+}
+
+.rating-container .star {
+    display: inline-block;
+    margin: 0 2px;
+    text-align: center;
+}
+
+.rating-container .empty-stars {
+    color: #aaa;
+}
+
+.rating-container .filled-stars {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: auto;
+    color: #fde16d;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.rating-rtl {
+    float: right;
+}
+
+.rating-animate .filled-stars {
+    transition: width 0.25s ease;
+}
+
+.rating-rtl .filled-stars {
+    left: auto;
+    right: 0;
+    transition: none;
+    -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.rating-rtl.is-star .filled-stars {
+    right: 0.06em;
+}
+
+.rating-rtl.is-heart .empty-stars {
+    margin-right: 0.07em;
+}
+
+/**
+ * Clear
+ */
+.rating-container .clear-rating {
+    color: #aaa;
+    cursor: not-allowed;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 60%;
+}
+
+.clear-rating-active {
+    cursor: pointer !important;
+}
+
+.clear-rating-active:hover {
+    color: #843534;
+}
+
+.rating-container .clear-rating {
+    padding-right: 5px;
+}
+
+/**
+ * Caption
+ */
+
+/* extend support to BS4 */
+.rating-container .caption .label {
+    display: inline-block;
+    padding: .25em .4em;
+    line-height: 1;
+    text-align: center;
+    vertical-align: baseline;
+    border-radius: .25rem;
+}
+
+.rating-container .caption {
+    color: #999;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+}
+
+.rating-container .caption {
+    margin-left: 5px;
+    margin-right: 0;
+}
+
+.rating-rtl .caption {
+    margin-right: 5px;
+    margin-left: 0;
+}
+
+/**
+ * Print
+ */
+@media print {
+    .rating-container .clear-rating {
+        display: none;
+    }
+}
+
+/**
+ * Sizes
+ */
+.rating-xl  {
+    font-size: 48px;
+}
+.rating-lg  {
+    font-size: 40px;
+}
+.rating-md  {
+    font-size: 32px;
+}
+.rating-sm  {
+    font-size: 24px;
+}
+.rating-xs  {
+    font-size: 16px;
+}
+
+.rating-xl .caption {
+    font-size: 20px;
+}
+.rating-lg .caption {
+    font-size: 18px;
+}
+.rating-md .caption {
+    font-size: 16px;
+}
+.rating-sm .caption {
+    font-size: 14px;
+}
+.rating-xs .caption {
+    font-size: 12px;
+}
+
